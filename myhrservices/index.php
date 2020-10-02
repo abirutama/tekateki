@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/5dbbe055c9.js" crossorigin="anonymous"></script>
 </head>
-<?php 
+            <?php 
             $notice = '';
             if(isset($_POST['email']) && isset($_POST['pass'])){
                 if($_POST['email']=="demas.prayogo@mncgroup.com" && $_POST['pass']=="mncku127"){
                     //echo "Selamat Kamu Berhasil! Secret Key: EMASKU-x7z";
                     $notice = '';
-                    header('home.php')
+                    header('home.php');
                     die();
                 }else{
                     $notice = 'Email atau Password Salah!';
