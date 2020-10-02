@@ -12,7 +12,7 @@
             $notice = '';
             if(isset($_POST['member_id']) && isset($_POST['member_pass'])){
                 if($_POST['member_id']=="990121297" && $_POST['member_pass']=="yogyakarta"){
-                    echo "Selamat Kamu Berhasil! Secret Key: EMASKU-x7z";
+                    echo "Selamat Kamu Berhasil! Secret Key: EMASKU-x7z7";
                     $notice = '';
                     die();
                 }else{
