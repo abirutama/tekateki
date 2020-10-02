@@ -1,3 +1,15 @@
+<?php session_start(); ?>
+<?php
+    if(!isset($_SESSION["email"])){
+        header('location: index.php');
+            die();
+    }else{
+        if($_SESSION["email"]!=="demas.prayogo@mncgroup.com"){
+            header('location: index.php');
+            die();
+        }
+    }
+?>
 <!DOCTYPE html>
 <html>
 

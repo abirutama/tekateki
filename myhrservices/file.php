@@ -1,3 +1,15 @@
+<?php session_start(); ?>
+<?php
+    if(!isset($_SESSION["email"])){
+        header('location: index.php');
+            die();
+    }else{
+        if($_SESSION["email"]!=="demas.prayogo@mncgroup.com"){
+            header('location: index.php');
+            die();
+        }
+    }
+?>
 <!DOCTYPE html>
 <html>
 
@@ -28,7 +40,37 @@
                         </span>
                         kartu-member.jpeg
                     </a>
-                    <a href="untitled.txt" class="panel-block">
+                    <a href="DCIM0251.jpg" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-file-image" aria-hidden="true"></i>
+                        </span>
+                        DCIM0251.jpg
+                    </a>
+                    <a href="DCIM0252.jpg" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-file-image" aria-hidden="true"></i>
+                        </span>
+                        DCIM0252.jpg
+                    </a>
+                    <a href="DCIM0253.jpg" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-file-image" aria-hidden="true"></i>
+                        </span>
+                        DCIM0253.jpg
+                    </a>
+                    <a href="DCIM0254.jpg" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-file-image" aria-hidden="true"></i>
+                        </span>
+                        DCIM0254.jpg
+                    </a>
+                    <a href="malioboro.jpg" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-file-image" aria-hidden="true"></i>
+                        </span>
+                        malioboro.jpg
+                    </a>
+                    <a href="polis-asuransi.pdf" class="panel-block">
                         <span class="panel-icon">
                         <i class="fas fa-file-pdf" aria-hidden="true"></i></i>
                         </span>

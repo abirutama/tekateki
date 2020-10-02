@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -12,9 +13,9 @@
             $notice = '';
             if(isset($_POST['email']) && isset($_POST['pass'])){
                 if($_POST['email']=="demas.prayogo@mncgroup.com" && $_POST['pass']=="mncku127"){
-                    //echo "Selamat Kamu Berhasil! Secret Key: EMASKU-x7z";
                     $notice = '';
-                    header('home.php');
+                    $_SESSION["email"] = $_POST['email'];
+                    header('location: home.php');
                     die();
                 }else{
                     $notice = 'Email atau Password Salah!';
@@ -24,7 +25,7 @@
     <section class="section">
         <div class="container">
             <div class="box" style="max-width:400px;margin:auto;padding:64px">
-                <img src="myhr.png" alt="" width="200px" style="margin-bottom:32px">
+                <img src="myhr.png" alt="" width="200px" style="margin-bottom:32px"><br>
                 <span class="has-text-danger"><?= $notice; ?></span>
                 <form action="" method="post">
                     <div class="field">
