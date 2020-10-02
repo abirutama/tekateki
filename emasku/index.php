@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/5dbbe055c9.js" crossorigin="anonymous"></script>
 </head>
-<?php 
+            <?php 
             $notice = '';
-            
             if(isset($_POST['member_id']) && isset($_POST['member_pass'])){
-                if($_POST['member_id']=="990121295" && $_POST['member_pass']=="yogyakarta"){
+                if($_POST['member_id']=="990121297" && $_POST['member_pass']=="yogyakarta"){
                     echo "Selamat Kamu Berhasil! Secret Key: EMASKU-x7z";
                     $notice = '';
                     die();
