@@ -22,7 +22,7 @@
                     </ul>
                 </div>
                 <nav class="panel">
-                    <a href="untitled.txt" class="panel-block">
+                    <a href="kartu-member.jpeg" class="panel-block">
                         <span class="panel-icon">
                             <i class="fas fa-file-image" aria-hidden="true"></i>
                         </span>
